@@ -1,0 +1,31 @@
+﻿<Window x:Class="TpCalculeRb.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TpCalculeRb"
+        mc:Ignorable="d"
+       Title="MainWindow" Height="400" Width="500">
+    <Grid>
+        <GroupBox Header="Option" Margin="56,164,265,98" Foreground="#FF322872" Background="#FFE8E4FF"/>
+
+
+        <Label Content="Nombre 1" HorizontalAlignment="Left" Margin="49,42,0,0" VerticalAlignment="Top" Width="203" Height="30" Background="#FF816BFD" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <TextBox x:Name="TbNbr1" HorizontalAlignment="Left" Margin="267,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="30" Background="#FFD3CBFF" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="11"/>
+        <Label Content="Nombre 2" HorizontalAlignment="Left" Margin="49,77,0,0" VerticalAlignment="Top" Width="203" Height="30" Background="#FF816BFD" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <TextBox x:Name="TbNbr2" HorizontalAlignment="Left" Margin="267,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="30" Background="#FFD3CBFF" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="11"/>
+        <Label Content="Resultat" HorizontalAlignment="Left" Margin="49,112,0,0" VerticalAlignment="Top" Width="203" Height="30" Background="#FF816BFD" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <TextBox x:Name="TbResultat" HorizontalAlignment="Left" Margin="267,112,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="30" Background="#FFD3CBFF" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="11"/>
+        <Button Content="Calculer" HorizontalAlignment="Left" Margin="343,224,0,0" VerticalAlignment="Top" Width="120" Height="30" Background="#FF816BFD" Foreground="White" FontWeight="Bold" Click="Calculer_Click" />
+        <Button Content="Quitter" HorizontalAlignment="Left" Margin="343,259,0,0" VerticalAlignment="Top" Width="120" Height="30" Background="#FF322872" Foreground="White" FontWeight="Bold" Click="Quitter_Click" />
+        <RadioButton x:Name="Radd" Margin="73,192,272,110" GroupName="MCSites" Background="{x:Null}" Content="Add" BorderBrush="#FF322872" Foreground="#FF322872"/>
+        <RadioButton x:Name="Rsous" Margin="73,212,272,110" GroupName="MCSites" Background="{x:Null}" Content="Sous" BorderBrush="#FF322872" Foreground="#FF322872"/>
+        <RadioButton x:Name="Rmult" Margin="73,232,272,110" GroupName="MCSites" Background="{x:Null}" Content="Mult" BorderBrush="#FF322872" Foreground="#FF322872"/>
+        <RadioButton x:Name="Rdiv" Margin="73,252,272,95" GroupName="MCSites" Background="{x:Null}" Content="Div" BorderBrush="#FF322872" Foreground="#FF322872"/>
+        <Button Content="Effacer" HorizontalAlignment="Left" Margin="343,294,0,0" VerticalAlignment="Top" Width="120" Height="30" Background="#FF722845" Foreground="White" FontWeight="Bold" Click="Effacer_Click" />
+        <Label x:Name="Lnb1"  HorizontalAlignment="Left" Margin="394,42,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="Red"/>
+        <Label x:Name="Lnb2"  HorizontalAlignment="Left" Margin="394,78,0,0" VerticalAlignment="Top" Foreground="Red"/>
+
+
+    </Grid>
+</Window>
